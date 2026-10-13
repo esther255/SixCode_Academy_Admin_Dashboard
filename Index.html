@@ -8,22 +8,41 @@
 
     </head>
     <body>
-        <h1>Student Dashboard</h1>
-        <p>This is a Webpage i'm going to create to help me to improve my skill on html and css i think on this webpage <br> 
-            i will gain more thing.</p>
-     <div class="card">
-        <svg width="24" height="24" viewBox="0 0 24 24"
-                fill="none" stroke="currentColor" stroke-width="2"
-                aria-hidden="true">
-            <circle cx="9" cy="8" r="4"/>
-            <path d="M3 21v-2a6 6 0 0 1 12 0v2"/>
-            <path d="M16 4a4 4 0 0 1 0 8"/>
-            <path d="M21 21v-2a6 6 0 0 0-4-5.7"/>     
-            </svg>
-          <span> Total Students: 24</span>
-        
-     </div>
-     <h2>Student list</h2>
+        <main class="dashboard">
+           <header class="page-header">
+            <p class="eyebrow">LEARNING POARTAL</p>
+            <h1>Student Dashboard</h1>
+            <p class="subtitle">Track your students and their progress.</p>
+            
+           </header>
+
+           <section class="card card--featured">
+            <span class="badge">Updated today</span>
+           </section>
+     
+        <svg 
+
+            class="icon"
+            viewbox="0 0 24 24"
+            fill="none"
+            stroke="currentColor" 
+            aria-hidden="true"  
+            >
+          <circle cx="9" cy="8" r="4"/>
+          <path d="M3 21v-2a6  6 0 0 1 12 0v2"/>
+          <path d="M16 4a4  4  0 0 1 0 8 "/>
+          <path d="M21 21v-2a6  6 0 0 0-4-5.7 "/>
+          </svg>
+          <p class="card-label">Total Students</p>
+          <p class="total">24</p>
+          <p class="helper">Students registered on the platform</p>
+          
+        </section>
+
+     <section= class="card">
+          <h2>Student list</h2>
+          <p class="helper">Review the latest student records.</p>
+          <div class="table-wrapper">
 
      <table>
     <thead>
@@ -38,19 +57,33 @@
         <tr>
         <td>Alice</td>
         <td>HTML</td>
-        <td>Complete</td>
+        <td>Complete</td><span class="status complete">Completed</span></td>
+
       </tr> 
             <tr>
         <td>Brian</td>
         <td>CSS</td>
-        <td>Pending</td>
+        <td>Pending</td><span class="status pending">Pending</span></td>
+
       </tr>
       <tr>
         <td>Chantal</td>
         <td>JavaScript</td>
-        <td>Complete</td>
+        <td>Complete</td><span class="status complete">Completeed</span></td>
+
+      </tr>
+      <tr>
+        <td>david</td>
+        <td>css</td>
+        <td><span class="status pending">Pendig</span></td>
       </tr>
     </tbody>
      </table>
+     </div>
+     </section>
+     <footer>
+        <p>Student Dashboard. practice project</p>
+     </footer>
+     </main>
     </body>
 </html>
